@@ -1,0 +1,34 @@
+.stats {
+  display: flex;
+  flex-direction: row;
+}
+
+.stats-item {
+  text-align: center;
+  padding: 20px 21.7px;
+  border-top: 0.5px solid gray;
+  background-color: rgb(238, 237, 237);
+}
+
+.stats-item:not(:last-child) {
+  border-right: 0.5px solid gray;
+}
+
+.stats-number {
+  font-weight: 700;
+}
+
+.stats-title {
+  font-weight: small;
+  color: rgb(179, 179, 179);
+  margin-bottom: 5px;
+}
+
+.followers {
+  padding: 20px 12px;
+  border-radius: 5px / 0 0 0 5px;
+}
+
+.likes {
+  border-radius: 5px / 0 0 5px 0;
+}

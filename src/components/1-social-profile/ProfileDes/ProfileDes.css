@@ -1,0 +1,23 @@
+.description {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.description-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.tag {
+  font-weight: small;
+  color: rgb(179, 179, 179);
+}
+
+.location {
+  font-weight: small;
+  color: rgb(179, 179, 179);
+}
