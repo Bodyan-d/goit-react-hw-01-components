@@ -1,0 +1,40 @@
+.item {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  color: whitesmoke;
+  padding: 8px 20px 8px 18px;
+  text-align: center;
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.percentage {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.item:nth-child(1) {
+  background-color: cyan;
+}
+.item:nth-child(2) {
+  background-color: purple;
+}
+.item:nth-child(3) {
+  background-color: rgb(240, 59, 59);
+}
+.item:nth-child(4) {
+  background-color: teal;
+}
+.item:nth-child(5) {
+  background-color: hotpink;
+}
+
+.stat-list {
+  display: flex;
+}

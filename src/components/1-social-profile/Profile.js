@@ -1,8 +1,8 @@
 import React from 'react';
 import Avatar from './Avatar/Avatar';
 import ProfileDes from './ProfileDes/ProfileDes';
-import Stats from './Stats/Stats'; 
-import './Profile.css'
+import Stats from './Stats/Stats';
+import './Profile.css';
 
 function Profile({ settings: { avatar, name, tag, location, stats } }) {
   return (
