@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './StatsElem.css';
 
-function StatisticsElem({ stats }) {
-  console.log(stats);
+export default function StatisticsElem({ stats }) {
   return (
     <ul className="stat-list">
       {stats.map(stat => (
@@ -19,5 +18,3 @@ function StatisticsElem({ stats }) {
 StatisticsElem.propTypes = {
   stats: PropTypes.array.isRequired,
 };
-
-export default StatisticsElem;

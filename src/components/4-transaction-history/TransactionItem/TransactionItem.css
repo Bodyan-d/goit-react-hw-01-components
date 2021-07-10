@@ -1,0 +1,7 @@
+.transaction-item {
+  padding: 10px 20px;
+}
+
+.transaction-items:nth-child(2n) {
+  background-color: lavender;
+}
