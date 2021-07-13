@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './FriendsItems.css';
 
 export default function FriendsItems({ friendsList }) {
@@ -24,3 +25,10 @@ export default function FriendsItems({ friendsList }) {
     </>
   );
 }
+
+FriendsItems.propTypes = {
+  isOnline: PropTypes.bool.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+};

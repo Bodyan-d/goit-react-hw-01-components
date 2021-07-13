@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './TransactionItem.css';
 
 export default function TransactionItem({ items }) {
@@ -20,3 +21,10 @@ function ucFirst(str) {
 
   return str[0].toUpperCase() + str.slice(1);
 }
+
+TransactionItem.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
