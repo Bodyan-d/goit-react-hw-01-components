@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profileSettings from '././user.json';
+import user from '././user.json';
 import statisticalData from '././statistical-data.json';
 import friendsList from '././friends.json';
 import transactions from '././transactions.json';
@@ -13,7 +13,14 @@ import TransactionHistory from './components/4-transaction-history/TransactionHi
 function App() {
   return (
     <div className="container">
-      <Profile key={profileSettings.tag} settings={profileSettings} />
+      <Profile
+        key={user.tag}
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <Statistics title="Upload stats" stats={statisticalData} />
       <Statistics stats={statisticalData} />
       <Friends friendsList={friendsList} />
